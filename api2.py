@@ -293,6 +293,6 @@ def start_model_version(model_id):
 if __name__ == '__main__':
 	if not os.path.exists('db.sqlite'):
 		db.create_all()
-	app.run(debug=True,host="0.0.0.0",port=443,ssl_context=(cer,key))
+	#app.run(debug=True,host="0.0.0.0",port=443,ssl_context=(cer,key))
 	#app.run(debug=True,host="0.0.0.0",ssl_context=(cer,key))
-	#app.run(debug=True,host="0.0.0.0",port=80)
+	app.run(debug=True,host="0.0.0.0",port=80)
